@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" id="city-input" placeholder="Search city..." spellcheck="false">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <div class="weather" id="weather-info" style="display: none;">
+            <h1 id="city">Karachi</h1>
+            <h2 id="temp">28°C</h2>
+            <p id="description">Clear Sky</p>
+            
+            <div class="details-grid">
+                <div class="col">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p id="humidity">77%</p>
+                        <span>Humidity</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <div>
+                        <p id="feels-like">32°C</p>
+                        <span>Feels Like</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p id="wind-speed">4.1 m/s</p>
+                        <span>Wind Speed</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-gauge"></i>
+                    <div>
+                        <p id="pressure">1008 hPa</p>
+                        <span>Pressure</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container" id="forecast-row">
+                </div>
+        </div>
+        <p id="error-message" style="display: none;">City not found</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
