@@ -258,3 +258,23 @@ body {
     margin-top: 20px;
     font-weight: 500;
 }
+/* Styling for Footer to align bottom-right */
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 40px; /* Space for footer */
+}
+
+.app-footer {
+    position: absolute;
+    bottom: 12px;
+    right: 24px;
+    background: transparent;
+}
+
+.app-footer p {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.4); /* Subtle faded white text */
+    letter-spacing: 0.5px;
+}
