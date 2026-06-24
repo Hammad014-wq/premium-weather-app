@@ -265,16 +265,19 @@ body {
     padding-bottom: 40px; /* Space for footer */
 }
 
+/* Purane .app-footer styling ko is se replace kardo */
 .app-footer {
-    position: absolute;
-    bottom: 12px;
-    right: 24px;
+    position: fixed; /* Fixed lagane se yeh har screen ke absolute bottom-right par rahega */
+    bottom: 15px;
+    right: 25px;
     background: transparent;
+    z-index: 9999; /* Taake yeh hamesha upar layer par rahe */
 }
 
 .app-footer p {
     font-size: 13px;
     font-family: sans-serif;
-    color: rgba(255, 255, 255, 0.4); /* Subtle faded white text */
+    color: rgba(255, 255, 255, 0.4);
     letter-spacing: 0.5px;
+    margin: 0;
 }
