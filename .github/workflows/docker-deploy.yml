@@ -34,5 +34,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/premium-weather-app:latest
-            ghcr.io/${{ github.repository_owner }}/premium-weather-app:${{ github.sha }}
+            ghcr.io/hammad014-wq/premium-weather-app:latest
+            ghcr.io/hammad014-wq/premium-weather-app:${{ github.sha }}
